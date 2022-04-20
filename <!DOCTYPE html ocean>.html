@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #4040a1;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #fefbd8;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #618685;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+
+
+<header>
+  <h2>the ocean</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">Artic</a></li>
+      <li><a href="#">Southern</a></li>
+      <li><a href="#">Indian</a></li>
+      <li><a href="#">Atlantic</a></li>
+      <li><a href="#">Pacific</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>How oceans play a key role in the fight against climate change</h1>
+    <p>Oceans are crucial to keep the planet alive. Not only are they the source of food and work for millions of people but they also are essential to weather control, and without them, life on this planet would be impossible. </p>
+    
+  </article>
+</section>
+
+<footer>
+  <p></p>
+</footer>
+
+</body>
+</html>
